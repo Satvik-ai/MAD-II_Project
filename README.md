@@ -16,7 +16,9 @@ Technologies used :
   - Caching :- Redis
   - Batch jobs :- Redis & Celery
 
+
 Functionalities : 
+
    1. Signup and Login 
        * Form for username and password
        * Role based access control. System can differentiate between admin, seller and user.
