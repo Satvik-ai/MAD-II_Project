@@ -24,33 +24,42 @@ Functionalities :
        * There is a model for user in database to store its data
        * The application has only one admin
        * User can apply to start a store in the platform and admin needto approve it
+  
     2. Section/Category Management (Only for Admin)
        * Admin can add new category
        * It can edit details of a category 
        * It can also remove category after a confirmation
        * It need to approve the request from store managers to add, edit or delete existing categories
+       
     3. Product Management (Only for Store Manager)
        * Store manager can add a new product
        * It can edit details of a product
        * It can also remove a product
        * Admin has to allocate categories while adding products and each category can have multiple products
        * Store manager can request admin to add, edit or remove existing categories
+       
     4. Search for products
        * App has a ability to search products based on section/category
        * It can also search products based on price, brand and product name
+       
     5. Shopping Cart
        * User can add multiple products from different categories in a cart
+       
     6. Buy Products
        * User can see all the products from a given category
        * It can buy multiple products from different categories
        * System will show out of stock for the products that are not available
        * User can see the total amount to be paid for the transaction in the cart
+       
     7. Daily Reminder
        * Everyday at 7:30 am, the app sends reminder to all those users who didn't bought anything the platform the previous day
+       
     8. Monthly Activity Report
        * On the first day of every month, the app sends a previous month activity report to all the users
+       
     9. Download Product Details
        * Store manager can download product details of its store
+       
     10. Caching
        * App uses cache at to improve the API performance
 
