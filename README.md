@@ -19,14 +19,14 @@ Technologies used :
 
 Functionalities : 
 
-   1. Signup and Login 
+    1. Signup and Login 
        * Form for username and password
        * Role based access control. System can differentiate between admin, seller and user.
        * Uses flask security based token based authentication
        * There is a model for user in database to store its data
        * The application has only one admin
        * User can apply to start a store in the platform and admin needto approve it
-  
+       
     2. Section/Category Management (Only for Admin)
        * Admin can add new category
        * It can edit details of a category 
