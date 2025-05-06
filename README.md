@@ -1,71 +1,73 @@
-### About Myself
+# 🛒 My Grocery Store – Online Grocery Platform
 
-Name :- Satvik Chandrakar
-Roll No :- 21f1000344
-Subject :- MAD-II Project
+**Developer:** Satvik Chandrakar  
+**Roll No:** 21f1000344  
+**Subject:** MAD-II Project
 
-### About Project 
+---
 
-My Grocery Store is a multi user app used for buying grocery. Users can buy as many products as they want from wide range of categories. 
+## 🧾 About the Project
 
-Technologies used :
-  - API : Flask 
-  - Database : Sqlite3
-  - Frontend : VueJS
-  - Style :- Bootstrap
-  - Caching :- Redis
-  - Batch jobs :- Redis & Celery
+**My Grocery Store** is a full-stack, multi-user web application that allows users to browse and purchase groceries from various categories. The platform includes admin and store manager features, supports role-based access control, and uses background jobs for reminders and reporting.
 
+---
 
-Functionalities : 
+## 🛠️ Technologies Used
 
-    1. Signup and Login 
-       * Form for username and password
-       * Role based access control. System can differentiate between admin, seller and user.
-       * Uses flask security based token based authentication
-       * There is a model for user in database to store its data
-       * The application has only one admin
-       * User can apply to start a store in the platform and admin needto approve it
-       
-    2. Section/Category Management (Only for Admin)
-       * Admin can add new category
-       * It can edit details of a category 
-       * It can also remove category after a confirmation
-       * It need to approve the request from store managers to add, edit or delete existing categories
-       
-    3. Product Management (Only for Store Manager)
-       * Store manager can add a new product
-       * It can edit details of a product
-       * It can also remove a product
-       * Admin has to allocate categories while adding products and each category can have multiple products
-       * Store manager can request admin to add, edit or remove existing categories
-       
-    4. Search for products
-       * App has a ability to search products based on section/category
-       * It can also search products based on price, brand and product name
-       
-    5. Shopping Cart
-       * User can add multiple products from different categories in a cart
-       
-    6. Buy Products
-       * User can see all the products from a given category
-       * It can buy multiple products from different categories
-       * System will show out of stock for the products that are not available
-       * User can see the total amount to be paid for the transaction in the cart
-       
-    7. Daily Reminder
-       * Everyday at 7:30 am, the app sends reminder to all those users who didn't bought anything the platform the previous day
-       
-    8. Monthly Activity Report
-       * On the first day of every month, the app sends a previous month activity report to all the users
-       
-    9. Download Product Details
-       * Store manager can download product details of its store
-       
-    10. Caching
-       * App uses cache at to improve the API performance
+- **Backend API:** Flask  
+- **Frontend:** Vue.js  
+- **Database:** SQLite3  
+- **Styling:** Bootstrap  
+- **Caching:** Redis  
+- **Batch Jobs:** Redis + Celery
 
-### Project Folder Structure
+---
+
+## 🌟 Features
+
+### 1. 🔐 Signup & Login
+- Token-based authentication via Flask Security.
+- Role-based access: Admin, Store Manager, and User.
+- Single admin user.
+- Users can apply to open a store; approval required by admin.
+
+### 2. 🗂️ Section/Category Management (Admin Only)
+- Add, edit, and delete categories (with confirmation).
+- Approve store manager requests to modify categories.
+
+### 3. 📦 Product Management (Store Managers)
+- Add, edit, and delete products.
+- Request admin approval to manage categories.
+- Products must be assigned to categories (one-to-many).
+
+### 4. 🔍 Search Functionality
+- Search by section/category, brand, product name, and price.
+
+### 5. 🛒 Shopping Cart
+- Add products from multiple categories.
+- View and manage items in the cart.
+
+### 6. 🧾 Purchase Flow
+- Browse products by category.
+- Purchase multiple items.
+- Out-of-stock indicators.
+- Cart summary with total transaction amount.
+
+### 7. ⏰ Daily Reminder
+- At 7:30 AM daily, sends reminders to users who didn’t make a purchase the previous day.
+
+### 8. 📊 Monthly Activity Report
+- Sends summary reports to all users on the 1st of each month.
+
+### 9. 📥 Download Product Details
+- Store managers can download product lists from their stores.
+
+### 10. ⚡ Caching
+- Redis used to cache frequently accessed data and improve API performance.
+
+---
+
+## 📁 Project Folder Structure
 
 - main.py :- It contains the python code to start the application
 - templates folder :- It contains the html file to be rendered to the user
@@ -75,20 +77,24 @@ Functionalities :
 - requirements.txt :- It contains the name of the packages to be downloaded
 - README.md :- It contains the information about the project and steps to be followed to start the application
 
-### About Models
+---
 
-- User :- Stores information about users
-- Role :- Stores list of roles i.e, Admin, Store Manager & User
-- RoleUsers :- Stores list of all users' id with their corresponding roles
-- Category :- Stores list of categories. 
-- Product :- Stores information about all the products
-- Cart :- Stores the list of products added to cart by the various users
-- Store :- Stores information about all the stores
-- Store_Application :- Stores list of all the users who have applied for starting a store
-- Orders :- Stores the list of products ordered by the various users
-- Request :- Stores the list of requests submitted by the various users for changes in categories
+## 🧩 Data Models
 
-### How To Run 
+- **User** – Stores user details and credentials.
+- **Role** – Contains roles: Admin, Store Manager, User.
+- **RoleUsers** – Maps users to their roles.
+- **Category** – Product classification information.
+- **Product** – Contains product details.
+- **Cart** – Tracks products added to users' carts.
+- **Store** – Information about each store.
+- **Store_Application** – Applications from users to start a store.
+- **Orders** – Tracks user orders and purchases.
+- **Request** – Store manager requests for category changes.
+
+---
+
+## 🧪 How to Run
 
 Open a terminal in the project root directory and run the following commands
 
