@@ -15,7 +15,7 @@
 ## 🛠️ Technologies Used
 
 - **Backend API:** Flask  
-- **Frontend:** VueJS
+- **Frontend:** Vue.js
 - **Database:** SQLite3  
 - **Styling:** Bootstrap  
 - **Caching:** Redis  
