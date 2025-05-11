@@ -68,6 +68,12 @@
 
 ---
 
+## Video Presentation
+
+- [Click Here](https://drive.google.com/file/d/1x28-s0_g3S5VRaBJXmQLxtsSZZl7wQ0M/view?usp=sharing) to see the video presentation.
+
+---
+
 ## 📁 Project Folder Structure
 
 - main.py :- It contains the python code to start the application
