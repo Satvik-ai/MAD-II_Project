@@ -20,6 +20,7 @@
 - **Styling:** Bootstrap  
 - **Caching:** Redis  
 - **Batch Jobs:** Redis + Celery
+- **SMTP Server:** Mailhog
 
 ---
 
